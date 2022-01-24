@@ -51,9 +51,41 @@ export default function Home({ books }) {
 }
 
 export async function getStaticProps() {
-  const API_URL = process.env.API_URL || 'http://localhost:3000'
-  const res = await fetch(`${API_URL}/api/books`);
-  const books = await res.json();
+  // const API_URL = process.env.API_URL || 'http://localhost:3000'
+  // const res = await fetch(`${API_URL}/api/books`);
+  // const books = await res.json();
+
+  const books = [
+    {
+      title: "Aprendiendo JavaScript",
+      ISBN: "9788700179263",
+      authors: ["Carlos Azaustre"],
+      cover: "blank.png",
+    },
+    {
+      title: "Clean JavaScript",
+      ISBN: "979856783319",
+      authors: ["Miguel A. Gómez"],
+      cover: "blank.png",
+    },
+    {
+      title: "MERN Guía Práctica de Aplicaciones Web",
+      ISBN: "9788418551055",
+      authors: [
+        "Jesús Fontecha",
+        "Manuel Ángel Serrano",
+        "Iván González",
+        "Ramón Hervás",
+      ],
+      cover: "blank.png",
+    },
+    {
+      title: "Cracking the Coding Interview",
+      ISBN: "9780984782857",
+      authors: ["Gayle Laakmann McDowell"],
+      cover: "blank.png",
+    },
+  ];
 
   return {
     props: {
