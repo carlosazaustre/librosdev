@@ -28,6 +28,12 @@ const data = [
     authors: ["Gayle Laakmann McDowell"],
     cover: "blank.png",
   },
+  {
+    title: "Distributed Systems with Node.js",
+    ISBN: "9781492077299",
+    authors: ["Thomas Hunter II"],
+    cover: "blank.png",
+  },
 ];
 
 export default function handler(req, res) {
