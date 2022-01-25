@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+
+import { Login } from "../components/Login";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ books }) {
@@ -15,6 +17,8 @@ export default function Home({ books }) {
         <h1 className={styles.title}>
           <a href="https://nextjs.org">LibrosDEV</a>
         </h1>
+
+        <Login />
 
         <p className={styles.description}>
           Agrega tus Libros de Programación Favoritos
